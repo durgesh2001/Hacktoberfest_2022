@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Scrolling</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Service</li>
+            <li>About</li>
+        </ul>
+    </header>
+<section>
+
+    <img src="stars.png" alt="img" id="stars">
+    <img src="moon.png" alt="img" id="moon">
+    <img src="mountains_behind.png" alt="img"  id="mountain_behind">
+    <h2 id="text">[ Product Name]</h2>
+    <button id="btn">Explore</button>
+    <img src="mountains_front.png" alt="img"id="moutain_front">
+</section> 
+
+<div id="content">
+    <strong>[Get your product description here]</strong><br><br><br>
+    <p >Add product details and brief description. <br>
+    All features are constumizable accordiing to clients needs and requirement.</p>
+    <br><br>
+    
+
+    <p>
+        For backend Node.js and Express support is available.
+
+    </p>
+    <br><br>
+    <p>
+        For database MongoDB support is available
+    </p>
+    <br><br>
+    <p>
+        For optimization React.js support is available
+    </p>
+</div>   
+<script>
+    let stars=document.getElementById('stars');
+    let moon=document.getElementById('moon');
+    let text=document.getElementById('text');
+    let btn=document.getElementById('btn');
+    let header=document.getElementById('header');
+    let mountain_behind=document.getElementById('mountain_behind');
+    
+    window.addEventListener('scroll',()=>{
+        let value=window.scrollY;
+        stars.style.left=value*2.5+'px';
+        moon.style.top=value*0.5+'px';
+        mountain_behind.style.top=value*0.25+'px';
+        text.style.marginTop=value*0.25+'px';
+        text.style.marginRight=value*2.25+'px';
+        btn.style.marginTop=-25+value*1.05+'px';
+        header.style.marginTop=value*2.25+'px';
+       
+    })
+</script>
+</body>
+</html>
