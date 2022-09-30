@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+ body {
+	 font-family: 'Segoe UI', sans-serif;
+}
+ body {
+	 display: flex;
+	 justify-content: center;
+	 flex-direction: column;
+}
+ body header {
+	 display: flex;
+	 justify-content: flex-end;
+	 margin: 20px;
+	 align-items: center;
+	 font-size:medium;
+}
+ 
+ body .logo-container {
+	 width: 100%;
+	 display: flex;
+	 height: auto;
+}
+ body .logo-container .main-logo {
+	 width: 272px;
+	 height: 90px;
+	 background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png');
+	 margin: auto;
+}
+ body .input-container {
+	 letter-spacing: normal;
+	 word-spacing: normal;
+	 width: 80%;
+	 min-width: 300px;
+	 max-width: 580px;
+	 margin: 0 auto;
+	 display: flex;
+	 position: relative;
+}
+ body .input-container:before {
+	 content: ' ';
+	 background-image: url('https://img.icons8.com/ios/24/000000/search--v1.png');
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 width: 44px;
+	 height: 44px;
+	 position: absolute;
+	 transform: scale(0.7);
+	 cursor: pointer;
+}
+ body .input-container:after {
+	 content: ' ';
+	 background-image: url('https://img.icons8.com/material-rounded/24/000000/microphone.png');
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 width: 44px;
+	 height: 44px;
+	 position: absolute;
+	 transform: scale(0.9);
+	 right: 5px;
+	 cursor: pointer;
+}
+ body .input-container #search {
+	 font-size: 16px;
+	 width: 100%;
+	 align-self: center;
+	 border-radius: 22px;
+	 height: 44px;
+	 border: none;
+	 box-sizing: border-box;
+	 padding-left: 40px;
+	 box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+ body .input-container #search:focus {
+	 outline: none;
+}
+ body .input-container #search:focus::placeholder {
+	 color: transparent;
+}
+.subbtn{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0px 30px 0px 30px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+.ad0{
+		margin-left: 20px;
+		padding: 0;
+		font-weight:400;
+		font-style:normal;
+		font-size: 140%;
+		vertical-align: baseline;
+  }
+  #pages0{
+	  margin-left: 30px;
+	  font-weight: 500;
+	  font-size:large;
+  }
+
+.adform{
+	margin-left: 30px;
+	font-size:small;
+}
+
