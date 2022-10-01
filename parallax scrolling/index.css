@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+ 
+
+    min-height: 100vh;
+    background: linear-gradient(#04070f, #1d3272) ;
+
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+}
+header .logo{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: centr;
+   
+    
+}
+header li{
+    color: white;
+    margin-left: 20px;
+    list-style: none;
+    border-radius: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    width: 80px;
+}
+header li:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+section{
+    position: relative;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 150vh;
+    width: 100%;
+    padding: 300px;
+}
+
+section img{
+    position:absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+section::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background: linear-gradient(to top,#200e25,transparent);
+    z-index: 10000;
+}
+ #moon{
+    mix-blend-mode: screen;
+    overflow: hidden;
+}
+#mountain_front{
+    
+    z-index: 10;;
+}
+#text{
+    right: -100px;
+    position: absolute;
+    color: white;
+    /* z-index:2; */
+    font-size: 4em;
+    /* transform: translateY(200px); */
+}
+#btn{
+    transform: translateY(100px);
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+    padding:4px;
+    font-size: 1.5em;
+
+}
+#content{
+    position: relative;
+    
+ 
+    height: 300vh;
+    width: 100%;
+    background: #200e25;
+    color: white;
+    font-size: 2em;
+    padding: 50px 50px;
+   text-align: center;
