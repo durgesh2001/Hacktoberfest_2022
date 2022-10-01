@@ -2,27 +2,27 @@
 using namespace std;
 
 
-struct ListNode {
+struct Listnode {
       int val;
-      ListNode *next;
-      ListNode() : val(0), next(nullptr) {}
-      ListNode(int x) : val(x), next(nullptr) {}
-      ListNode(int x, ListNode *next) : val(x), next(next) {}
+      Listnode *next;
+      Listnode() : val(0), next(nullptr) {}
+      Listnode(int x) : val(x), next(nullptr) {}
+      Listnode(int x, Listnode *next) : val(x), next(next) {}
  };
- 
+
 //removing duplicate from exiting list.
 class Solution {
 public:
-    ListNode* deleteDuplicates(ListNode* head) {
-        
+    Listnode* deleteDuplicates(Listnode* head) {
+
         //checking for empty list
         if(head == NULL)
         {
             return NULL;
         }
-        
-        ListNode* it = head->next;  // main iterator
-        ListNode* curr = head;  // current node in final list
+
+        Listnode* it = head->next;  // main iterator
+        Listnode* curr = head;  // current node in final list
         while(it != NULL)
         {
             //checking for duplicate values
@@ -32,7 +32,7 @@ public:
                 curr->next = it;
                 curr = curr->next;
             }
-            
+
             //if duplicate values appear deleting them
             it = it->next;
         }
