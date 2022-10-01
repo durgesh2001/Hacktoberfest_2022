@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Template</title>
+    <link rel="stylesheet" href="style-card.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" data-tilt>
+            <img src="card-img.jpg" alt="Card Image">
+            <h1 class="marg">Healthy Diet</h1>
+            <span class="watermark">01</span>
+            <p class="marg">A healthy diet is a diet that maintains or improves overall health. 
+                A healthy diet provides the body with essential nutrition: fluid, macronutrients such
+                 as protein, micronutrients such as vitamins, and adequate fibre and food energy.</p>
+            <button class='btn marg'>Read More</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".your-element"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+</body>
+
+</html>
