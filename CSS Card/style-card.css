@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #191919;
+    color: white;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #f0f);
+    clip-path: circle(30% at right 10%);
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(red, orange);
+    clip-path: circle(20% at 8% 80%);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.container .card {
+    position: relative;
+    width: 40vw;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    background: rgba(225, 225, 225, 0.1);
+    box-shadow: 20px 20px 50px #000;
+    border-top: 2px solid rgba(225, 225, 225, 0.25);
+    border-left: 2px solid rgba(225, 225, 225, 0.25);
+    backdrop-filter: blur(5px);
+}
+
+.container .card .watermark {
+    position: absolute;
+    color: rgba(225, 225, 225, 0.1);
+    font-weight: 900;
+    top: -20px;
+    right: 30px;
+    font-size: 8rem;
+    pointer-events: none;
+}
+
+.container .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #10fe91;
+    scale: 1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    scale: 1.05;
+    transition: 150ms ease-in-out;
+}
+
+/* Utilities */
+
+.marg {
+    margin: 20px 10px;
+}
