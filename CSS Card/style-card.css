@@ -89,6 +89,7 @@ body::before {
 }
 
 .btn:hover {
+    opacity: 0.9;
     scale: 1.05;
     transition: 150ms ease-in-out;
 }
@@ -96,5 +97,5 @@ body::before {
 /* Utilities */
 
 .marg {
-    margin: 20px 10px;
+    margin: 20px 12px;
 }
