@@ -1,0 +1,111 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    background: url("Bubble-Background.svg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    margin-top:auto;
+    margin-bottom:auto;
+    border-radius:80px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    border-radius:15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-size:17px;
+    color: #003049;
+    border-bottom: 6px solid #fec89a;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+h4{
+    margin-top:0px;
+}
+p{
+    margin-bottom:10px    
+}
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
+.card:hover{
+    background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+    color:#0f0f0f;
+}
+
+html {
+    box-sizing: border-box;
+      cursor: url('https://i.ibb.co/6bycCv7/Ellipse-4.png'), default;	
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+      background-color: #030302;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper {
+      display: grid;
+      grid-template-columns: repeat(9, 40px);
+      grid-template-rows: repeat(7, 40px);
+      grid-gap: 1.5rem;
+      margin-top:40px;
+      
+  }
+  .item { background:url("profile picture.png"); 
+        background-size:cover;
+        background-repeat: no-repeat;   
+}
+
+  
+  
+  

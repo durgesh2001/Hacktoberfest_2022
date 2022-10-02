@@ -1,0 +1,16 @@
+======= Flevix.com =======
+Thank you for downloading this item.
+
+
+
+Background-Features:
+1. Easy to Use
+2. Clean Design
+3. Resolution: Resizeable
+
+Background-Files:
+1. 1 SVG Animation File
+2. 1 Information File
+
+How to Include:
+<img src=”svgfilename.svg” alt=”altername name”>
