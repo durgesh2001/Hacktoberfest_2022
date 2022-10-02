@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+//function of binary search starts here
+int binarySearch(vector<int>& nums, int target) 
+    {
+        int n=nums.size(); //determining size
+        int start=0; 
+        int end= n-1;
+        int mid=start+ (end-start)/2;
+
+        while(start<=end)
+        {
+            if(nums[mid]==target)
+            {
+                return mid;
+            }
+            else if(nums[mid]<target)
+            {
+                start= mid+1;
+                
+            }
+            else
+            {
+                end=mid-1;
+            }
+            mid=start+(end-start)/2;
+        }
+        return -1;
+    }
+
+int main()
+{
+    vector<int> arr= {2,7,13,32,75,76,93}; 
+    
+    int index=binarySearch(arr,13);
+    std::cout << 13<< " is found at index"<<index+1;
+
+    return 0;
+}
