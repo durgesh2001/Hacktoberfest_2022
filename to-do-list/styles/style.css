@@ -135,9 +135,11 @@ body.dark-mode .task-list li .task {
 
 .task-list li .task-edit-ctrls .user-task-check {
   background-color: var(--green);
+  color: #FFF
 }
 .task-list li .task-edit-ctrls .user-task-delete {
   background-color: var(--red);
+  color: #FFF;
 }
 
 /* THEME CONTROL */
