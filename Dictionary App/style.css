@@ -35,7 +35,6 @@ body {
 }
 .search-box button {
   padding: 15px 0;
-  width: 25%;
   background-color: #5f568a;
   border: none;
   outline: none;
@@ -110,6 +109,7 @@ button:after {
   opacity: 0;  
   top: 14px;
   right: -20px;
+  left: 10px
   transition: 0.5s;
 }
 
